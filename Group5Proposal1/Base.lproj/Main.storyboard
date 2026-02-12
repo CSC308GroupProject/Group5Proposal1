@@ -76,6 +76,16 @@
                     <view key="view" contentMode="scaleToFill" id="bpX-xA-eNI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-Dc-AlE">
+                                <rect key="frame" x="33" y="209" width="326" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Our project is a mobile app that lets users create, store, and share gift wishlists. Each user can make their own wishlist, view others’ lists, and mark items they plan to buy, helping prevent duplicate gifts. The app will also send reminders for upcoming occasions and wishlist updates.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xCT-wY-vVa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -83,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuR-RP-eqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="492" y="808"/>
+            <point key="canvasLocation" x="490.83969465648852" y="807.74647887323943"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wTZ-zx-TWX">
@@ -92,14 +102,71 @@
                     <view key="view" contentMode="scaleToFill" id="TIy-XC-dcB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-BE-HYc">
+                                <rect key="frame" x="130" y="230" width="133" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0r-7v-C9o">
+                                <rect key="frame" x="83" y="326" width="226" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Lists">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at5-o3-Ib7">
+                                <rect key="frame" x="83" y="439" width="226" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Browse">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erw-dU-WJF">
+                                <rect key="frame" x="83" y="552" width="226" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Notifications">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvI-O1-NHU">
+                                <rect key="frame" x="83" y="665" width="226" height="56"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Settings">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Oqc-Gv-jjO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U0r-7v-C9o" firstAttribute="top" secondItem="dKw-BE-HYc" secondAttribute="bottom" constant="48" id="0ZM-YN-YwM"/>
+                            <constraint firstItem="pvI-O1-NHU" firstAttribute="top" secondItem="erw-dU-WJF" secondAttribute="bottom" constant="57" id="0bE-SA-GCW"/>
+                            <constraint firstItem="U0r-7v-C9o" firstAttribute="top" secondItem="dKw-BE-HYc" secondAttribute="bottom" constant="48" id="3LQ-XD-lXD"/>
+                            <constraint firstItem="dKw-BE-HYc" firstAttribute="leading" secondItem="Oqc-Gv-jjO" secondAttribute="leading" constant="130" id="4RL-CV-fo4"/>
+                            <constraint firstItem="U0r-7v-C9o" firstAttribute="top" secondItem="dKw-BE-HYc" secondAttribute="bottom" constant="48" id="9Jw-Vf-2h1"/>
+                            <constraint firstItem="U0r-7v-C9o" firstAttribute="leading" secondItem="Oqc-Gv-jjO" secondAttribute="leading" constant="83" id="DYX-Hr-UeE"/>
+                            <constraint firstItem="erw-dU-WJF" firstAttribute="leading" secondItem="Oqc-Gv-jjO" secondAttribute="leading" constant="83" id="FrD-as-3J9"/>
+                            <constraint firstItem="pvI-O1-NHU" firstAttribute="leading" secondItem="Oqc-Gv-jjO" secondAttribute="leading" constant="83" id="G6m-Jl-Win"/>
+                            <constraint firstItem="Oqc-Gv-jjO" firstAttribute="trailing" secondItem="dKw-BE-HYc" secondAttribute="trailing" constant="130" id="Hqh-Fo-QOl"/>
+                            <constraint firstItem="Oqc-Gv-jjO" firstAttribute="trailing" secondItem="erw-dU-WJF" secondAttribute="trailing" constant="84" id="Kex-ib-brm"/>
+                            <constraint firstItem="at5-o3-Ib7" firstAttribute="leading" secondItem="Oqc-Gv-jjO" secondAttribute="leading" constant="83" id="NbL-Dp-ceT"/>
+                            <constraint firstItem="Oqc-Gv-jjO" firstAttribute="trailing" secondItem="U0r-7v-C9o" secondAttribute="trailing" constant="84" id="PId-SR-obh"/>
+                            <constraint firstItem="Oqc-Gv-jjO" firstAttribute="trailing" secondItem="pvI-O1-NHU" secondAttribute="trailing" constant="84" id="PV0-Kd-8oO"/>
+                            <constraint firstItem="Oqc-Gv-jjO" firstAttribute="trailing" secondItem="dKw-BE-HYc" secondAttribute="trailing" constant="130" id="WUU-2S-Dll"/>
+                            <constraint firstItem="dKw-BE-HYc" firstAttribute="top" secondItem="Oqc-Gv-jjO" secondAttribute="top" constant="68" id="ZLU-qf-fxV"/>
+                            <constraint firstItem="erw-dU-WJF" firstAttribute="top" secondItem="at5-o3-Ib7" secondAttribute="bottom" constant="57" id="fCP-du-Dm9"/>
+                            <constraint firstItem="dKw-BE-HYc" firstAttribute="leading" secondItem="Oqc-Gv-jjO" secondAttribute="leading" constant="130" id="k2Q-sz-v01"/>
+                            <constraint firstItem="Oqc-Gv-jjO" firstAttribute="trailing" secondItem="at5-o3-Ib7" secondAttribute="trailing" constant="84" id="qdY-Oy-hhD"/>
+                            <constraint firstItem="at5-o3-Ib7" firstAttribute="top" secondItem="U0r-7v-C9o" secondAttribute="bottom" constant="57" id="rVR-jb-4MM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EPb-Qs-qJY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zua-Dj-9Vq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="823"/>
+            <point key="canvasLocation" x="1588.5496183206105" y="822.53521126760563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p8n-Uh-xhk">
