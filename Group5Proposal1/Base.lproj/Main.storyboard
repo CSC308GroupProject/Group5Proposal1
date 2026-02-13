@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ntq-HX-fTk">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djc-hs-AvC">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,57 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Group5Proposal1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuG-xG-9g0">
-                                <rect key="frame" x="39" y="215" width="314" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clipboard" translatesAutoresizingMaskIntoConstraints="NO" id="yPm-lP-95W">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rp-kE-zEj">
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuG-xG-9g0">
+                                <rect key="frame" x="45" y="228" width="312" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="vtW-ug-KYN"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Step 1: Timeline &amp; Roles"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Step 1: Timeline &amp; Roles">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="VAO-g6-06g" kind="show" id="Til-VV-6Ds"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s98-xn-r9p">
-                                <rect key="frame" x="39" y="368" width="314" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s98-xn-r9p">
+                                <rect key="frame" x="45" y="379" width="312" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="AQu-RI-URw"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Step 2: Idea Draft"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Step 2: Idea Draft">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="iBi-Gq-k6B" kind="show" id="yoi-75-vSm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKZ-xE-yPN">
-                                <rect key="frame" x="39" y="525" width="314" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKZ-xE-yPN">
+                                <rect key="frame" x="45" y="530" width="312" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="OqA-uA-K7R"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Step 3: UI Design"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Step 3: UI Design">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="3JV-Bp-1IM" kind="show" id="0ow-Vn-QNf"/>
                                 </connections>
@@ -46,19 +71,43 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s98-xn-r9p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7VC-fZ-ReX"/>
+                            <constraint firstItem="hKZ-xE-yPN" firstAttribute="top" secondItem="s98-xn-r9p" secondAttribute="bottom" constant="35" id="80l-Jz-c0d"/>
+                            <constraint firstItem="yPm-lP-95W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9EX-3p-Gpp"/>
+                            <constraint firstItem="s98-xn-r9p" firstAttribute="top" secondItem="IuG-xG-9g0" secondAttribute="bottom" constant="35" id="B0E-MP-6tA"/>
+                            <constraint firstItem="1rp-kE-zEj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EuG-tv-9Bg"/>
+                            <constraint firstItem="1rp-kE-zEj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GpR-Rk-NXb"/>
+                            <constraint firstItem="s98-xn-r9p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="IYH-da-XhY"/>
+                            <constraint firstItem="1rp-kE-zEj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IqG-CE-q16"/>
+                            <constraint firstItem="yPm-lP-95W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KMp-Ss-SoR"/>
+                            <constraint firstAttribute="bottom" secondItem="1rp-kE-zEj" secondAttribute="bottom" id="M0G-Bc-EFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s98-xn-r9p" secondAttribute="trailing" constant="45" id="NIB-Uo-Ya0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IuG-xG-9g0" secondAttribute="trailing" constant="45" id="de9-H3-oWa"/>
+                            <constraint firstItem="hKZ-xE-yPN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="f9B-O8-hIz"/>
+                            <constraint firstAttribute="bottom" secondItem="yPm-lP-95W" secondAttribute="bottom" id="i75-ec-kxr"/>
+                            <constraint firstItem="IuG-xG-9g0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="ihd-5A-Fhv"/>
+                            <constraint firstItem="yPm-lP-95W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ly1-Fn-aFz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKZ-xE-yPN" secondAttribute="trailing" constant="45" id="v76-Wj-dmK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Project Proposal" id="gTf-Lg-XjF"/>
+                    <connections>
+                        <outlet property="button1" destination="IuG-xG-9g0" id="Bpt-bx-iKN"/>
+                        <outlet property="button2" destination="s98-xn-r9p" id="wl3-Qq-pa8"/>
+                        <outlet property="button3" destination="hKZ-xE-yPN" id="BT7-cI-lYC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="656" y="90"/>
+            <point key="canvasLocation" x="1582.4427480916029" y="89.436619718309871"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dyh-KL-oWX">
             <objects>
                 <viewController id="VAO-g6-06g" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xp8-yL-nlr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LEn-Fr-LQ0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,14 +116,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XR3-ht-E8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1680" y="75"/>
+            <point key="canvasLocation" x="2605.3435114503814" y="74.647887323943664"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vGP-Ku-hFZ">
             <objects>
                 <viewController id="iBi-Gq-k6B" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bpX-xA-eNI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIG-Dc-AlE">
@@ -100,38 +149,38 @@
             <objects>
                 <viewController id="3JV-Bp-1IM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIy-XC-dcB">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKw-BE-HYc">
-                                <rect key="frame" x="130" y="230" width="133" height="48"/>
+                                <rect key="frame" x="130" y="288" width="142" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0r-7v-C9o">
-                                <rect key="frame" x="83" y="326" width="226" height="56"/>
+                                <rect key="frame" x="83" y="384" width="235" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Lists">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="at5-o3-Ib7">
-                                <rect key="frame" x="83" y="439" width="226" height="56"/>
+                                <rect key="frame" x="83" y="497" width="235" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Browse">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erw-dU-WJF">
-                                <rect key="frame" x="83" y="552" width="226" height="56"/>
+                                <rect key="frame" x="83" y="610" width="235" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Notifications">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvI-O1-NHU">
-                                <rect key="frame" x="83" y="665" width="226" height="56"/>
+                                <rect key="frame" x="83" y="723" width="235" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Settings">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
@@ -169,25 +218,37 @@
             <point key="canvasLocation" x="1588.5496183206105" y="822.53521126760563"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="p8n-Uh-xhk">
+        <scene sceneID="6be-Hj-BZC">
             <objects>
-                <navigationController id="ntq-HX-fTk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyY-Uk-JQp">
-                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="djc-hs-AvC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="hGk-Mp-39X">
+                        <rect key="frame" x="0.0" y="124" width="402" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hCA-Fr-49E"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y7x-Nl-q0a"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="83Y-tJ-cfz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtK-cN-Ygk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-259" y="73"/>
+            <point key="canvasLocation" x="655.72519083969462" y="89.436619718309871"/>
         </scene>
     </scenes>
     <resources>
+        <image name="clipboard" width="462.5" height="640"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
