@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         button1.layer.cornerRadius = 10
         button2.layer.cornerRadius = 10
         button3.layer.cornerRadius = 10
+    
         
     }
 
